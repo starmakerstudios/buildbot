@@ -1,0 +1,7 @@
+{
+  "remoteUser": "code",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "buildbot-worker start /home/code/buildbot"
+}
