@@ -3,5 +3,9 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "runArgs": [
+    "--env-file",
+    ".devcontainer/devcontainer.env"
+  ],
   "postCreateCommand": "buildbot-worker start /home/code/buildbot"
 }
